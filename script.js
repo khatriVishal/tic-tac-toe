@@ -2,7 +2,18 @@ console.log("Game started");
 let player1;
 let player2;
 player1 = prompt("Enter player-1 name");
+console.log(player1.length);
+while(player1.length<1)
+{
+    alert("player-1 name must contain atleast 1 character");
+    player1 = prompt("Enter player-1 name");
+}
 player2 = prompt("Enter player-2 name");
+while(player2.length<1)
+{
+    alert("player-2 name must contain atleast 1 character");
+    player2 = prompt("Enter player-2 name");
+}
 let music = new Audio("music.mp3");
 let turn = new Audio("ting.mp3");
 let gameover = new Audio("gameover.mp3");
